@@ -1,0 +1,38 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+.main{
+	width: 700px;
+	margin: auto;
+	/*background: red;*/
+}
+
+.menu>li{
+	/*background: green;*/
+	display: inline-block;
+	padding: 25px 15px;
+	position: relative;
+}
+
+.submenu{
+	width: 100px;
+	left: -100%;
+	top: 100%;
+	border: 1px solid yellow;
+	position: absolute;
+	opacity: 0;
+	background: lightcoral;
+	transition: 2s all;
+}
+.submenu>li{
+	list-style: none;
+	margin-bottom: 7px;
+}
+
+.menu>li:hover .submenu{
+	opacity: 1;
+	left: 0px;
+}
