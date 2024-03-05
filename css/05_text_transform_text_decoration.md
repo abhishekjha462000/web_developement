@@ -1,6 +1,6 @@
 # text-transform
 
-The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.
+The `text-transform` CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby.
 
 ```CSS
     /* Keyword values */
@@ -14,7 +14,7 @@ The text-transform CSS property specifies how to capitalize an element's text. I
 
 # text-decoration-line
 
-The text-decoration-line CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
+The `text-decoration-line` CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
 
 ```CSS
     /* Single keyword */

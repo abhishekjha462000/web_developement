@@ -1,0 +1,11 @@
+input[type="text"] {
+    background-color: green;
+}
+
+[type="password"] {
+    color: magenta;
+}
+
+h2.small .big{
+    color: aliceblue;
+}

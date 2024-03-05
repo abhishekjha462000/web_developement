@@ -1,0 +1,87 @@
+/* 
+    We have various kinds of selectors
+    1. Id selector(#)
+    2. Class selector(.)
+    3. Element selector(h2)
+    4. Attribute selector([type="text"])
+    5. Universal selector(*)
+
+    We can also combine various selectors using the combinators and grouping.
+    
+    For this we have the grouping operator(,).
+    Also we have various kinds of combinators.
+    1. Child combinator(>)
+    2. Descendent combinator(also called as space combinator)(" ")
+    3. General sibling combinator(~)
+    4. Next sibling combinator(+)
+*/
+
+/* ====================================================== ID SELECTOR ================================================= */
+
+/* The element with id="demo" */
+#demo {
+    border: red 2px solid;
+}
+
+/* The h1 element with id="identified" */
+h1#identified {
+    color: magenta;
+}
+
+/* ====================================================== CLASS SELECTOR ================================================= */
+
+/* All elements with class="spacious" */
+.spacious {
+    margin: 2em;
+}
+
+/* All <li> elements with class="spacious" */
+li.spacious {
+    margin: 2em;
+}
+
+/* All <li> elements with a class list that includes both "spacious" and "elegant" */
+/* For example, class="elegant retro spacious" */
+li.spacious.elegant {
+    margin: 2em;
+}
+
+/* ====================================================== TYPE SELECTOR ================================================= */
+
+/* All <a> elements. */
+a {
+    color: red;
+}
+
+span {
+    background-color: skyblue;
+}
+
+/* ====================================================== ATTRIBUTE SELECTOR ================================================= */
+
+/* <a> elements with a title attribute */
+a[title] {
+    color: purple;
+}
+
+/* <a> elements with an href containing "example" */
+a[href*="example"] {
+    font-size: 2em;
+}
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+    background-color: gold;
+}
+
+/* <a> elements with an href ending ".org", case-insensitive */
+a[href$=".org"] {
+    font-style: italic;
+}
+
+/* ====================================================== UNIVERSAL SELECTOR ================================================= */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
