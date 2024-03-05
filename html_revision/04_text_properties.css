@@ -1,0 +1,24 @@
+/* 
+    We also have text properties as well.
+    1. text-align : center | left | right | justify
+    2. line-height
+    3. letter-spacing
+    4. word-spacing
+*/
+
+/* 
+    The text-align CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box.
+
+    We can either give a number or percentage.
+
+    When we give a number, the used value is the number provided multiplied by the element's font size.
+
+    The MDN documentation says NOT to use percentages and unit-values for line-height.
+*/
+
+#demo{
+    /* This means double the computed font-size of the element. */
+    line-height: 2;
+}
+
+/* letter-spacing and word-spacing are simple concepts. */

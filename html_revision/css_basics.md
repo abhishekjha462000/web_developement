@@ -1,4 +1,4 @@
-'/# CSS
+# CSS
 
 CSS stands for cascading style sheet. It is not a programming language nor it is a markdown language like HTML.
 It is used to style the documents like HTML.
@@ -36,7 +36,7 @@ In the above code snippet, the `link` tag overwrites the CSS of the style tag.
 A CSS file consists of many rulesets. A CSS ruleset is a combination of selector and a declaration block. Within a declaration block,
 we mention multiple declarations(also called as CSS rule), each of which is seperated via semicolon. A declaration is property-value pair.
 
-The declrations are enclosed within a pair of open and closed curly braces. `{}`
+The declrations are enclosed within a pair of open and closed curly braces `{}`.
 
 ```CSS
     p {
