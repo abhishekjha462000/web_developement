@@ -1,0 +1,47 @@
+/* 
+    We can also change the font. We will learn 4 such settings
+    1. font-family
+    2. font-style
+    3. font-size
+    4. font-weight
+*/
+
+/* 
+    The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.
+    We should always include at least one generic family name in a font-family list as there's no guarantee that any given font is available. 
+    This lets the browser select an acceptable fallback font when necessary.
+*/
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 
+    The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its font-family.
+*/
+
+.style{
+    font-style: normal;
+}
+
+/*
+    The font-size property expects us to give a size to our fonts. It could be 
+    absolute unit(pixel, cm, etc...) or relative unit(rem, em, %, vw, vh).
+
+    A pixel is equal to 1/96 of an inch.
+*/
+
+h1 {
+    font-size: 20px;
+}
+
+/* 
+    The font-weight CSS property sets the weight (or boldness) of the font. 
+    The weights available depend on the font-family that is currently set.
+    We have weights from 100 to 1000. The weight of 400 corresponds to the normal font weight.
+    The weight of 900 corresponds to the bold font weight.
+*/
+
+#bold {
+    font-weight: 900; 
+}
