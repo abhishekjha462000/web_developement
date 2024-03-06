@@ -1,0 +1,16 @@
+/* 
+    display: none is used to remove a CSS element from the document flow.
+
+    This is different from opacity as it does not remove the object from the document flow.
+    It just does not show it.
+
+    However, for animations we use opacity and not display:none;
+*/
+
+div {
+    display: none; /* This completely removes the CSS element from the document flow. */
+}
+
+div {
+    opacity: 0; /* does not remove the CSS element from the document flow. */
+}
