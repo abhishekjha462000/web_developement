@@ -1,0 +1,35 @@
+/* 
+    The height and width of an element set the height and width of the content box of that element by default.
+*/
+
+div {
+    /* These values will set the dimensions of the content box of div by default. */
+    height: 200px;
+    width: 400px;
+}
+
+/* 
+    If we want that the height and width which we provide be the dimensions of the entire box, then 
+    we need to set the box-sizing as border-box
+*/
+
+div {
+    height : 200px;
+    width: 400px;
+    box-sizing: border-box; /* This is not the default value */
+}
+
+/* 
+    If we use % for width and height, then the value are taken relative to the parent of the element.
+*/
+
+div.parent {
+    height: 600px;
+    width: 500px;
+}
+
+div.parent > div.child {
+    /* height = 300px and width = 150px */
+    height: 50%;
+    width: 30%;
+}

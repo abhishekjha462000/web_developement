@@ -1,0 +1,32 @@
+/* 
+    Padding is the space bewteen the edge of the content box and the border.
+    The padding CSS shorthand property sets the padding area on all four sides of an element at once.
+
+    padding : 10px 20px 30px 40px; // top right bottom left
+    padding : 10px 20px; // (top, bottom) (right, left)
+*/
+
+h1 {
+    padding: 10px 20px 30px 40px;
+    padding: 10px 20px;
+    padding: 30px;
+}
+
+/* 
+    UNITS OF PADDING
+    ================
+
+    1. Absolute units := like pixels.
+    2. Relative units := %
+
+    The size of the padding as a percentage,
+    relative to the inline size (width in a horizontal language, defined by writing-mode) of the containing block.
+*/
+div.parent {
+    width: 400px;
+    height: 200px;
+}
+
+div.parent .box {
+    padding: 10% 20% 30% 40%; /* of width of the div.parent(400px)  40px 80px 120px 160px */
+}

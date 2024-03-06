@@ -1,0 +1,30 @@
+/* 
+    The margin CSS shorthand property sets the margin area on all four sides of an element.
+
+    margin : 10px 20px 30px 40px; // top right bottom left
+    margin : 10px 20px; // (top, bottom) (right, left)
+*/
+
+h1 {
+    margin: 10px 20px 30px 40px;
+}
+
+/* 
+    UNITS OF MARGIN
+    ================
+
+    1. Absolute units := like pixels.
+    2. Relative units := %
+
+    The size of the margin as a percentage,
+    relative to the inline size (width in a horizontal language, defined by writing-mode) of the containing block.
+*/
+
+div.parent {
+    width: 400px;
+    height: 200px;
+}
+
+div.parent .box {
+    margin: 10% 20% 30% 40%; /* of width of the div.parent(400px)  40px 80px 120px 160px */
+}

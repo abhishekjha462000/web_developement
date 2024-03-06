@@ -6,30 +6,43 @@
     <title>Practice</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        .container{
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.container{
             height: 500px;
-            width: 500px;
-            border:2px solid red;
+            width: 600px;
+            margin: auto;
+            background-color: aquamarine;
+            border: 1px solid red;
         }
 
-        a{
-            border: 2px solid aquamarine;
+        div.box {
+            border: 1px solid grey;
+            margin: auto;
+            height: 40px;
+            width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        div > a {
+            border: 2px solid blue;
+            height: 40px;
+            width: 50px;
             padding: 20px;
-        }
-
-        .box {
-            height: 10%;
-            width: 10%;
-            border: 1px solid green;
+            margin: 100px 0;
         }
     </style>
+       
 </head>
 <body>
-    <h1>Margin</h1>
-    <a href="#">Click Me</a>
-
     <div class="container">
-        <div class="box"></div>
+        <div class="box">
+            Abhishek
+        </div>
+        <a href="">Abhishek</a>
+        <a href="">Sameer</a>
     </div>
 </body>
 </html>

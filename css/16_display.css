@@ -1,0 +1,47 @@
+/* 
+    We have another property known as display.
+    The display property sets whether an element should be treated as a block or an inline element and the layout
+    used for its children, such as flow layout, grid and flex.
+
+    It can take the following values
+    
+    1. none
+    2. block
+    3. inline
+    4. inline-block(power of both block and inline elements)
+*/
+
+/* 
+    BLOCK ELEMENTS
+    ==============
+    
+    1. Width and height are respected.
+    2. Box breaks onto a new line.
+    3. Padding, margin and border cause other elements to be pushed away from the box.
+    4. By default, they take the entire width of the parent i.e the box extends in the inline
+        direction to fill available space in container.(unless styled otherwise)
+    5. Examples are h1, p, div, header, section, article, footer, etc.
+*/
+
+/* 
+    INLINE ELEMENTS
+    ==============
+    
+    1. Width and height are NOT respected.
+    2. Box does NOT break onto a new line.
+    3. Vertical padding, margin and borders apply but do NOT cause other elements
+        to move away from the box.
+    4. Horizontal padding, margin and border will apply and cause other boxes to move away.
+    5. Examples are span, a, img.
+*/
+
+/* 
+    INLINE BLOCK ELEMENT(combination of block and inline element)
+    =============================================================
+
+    1. Hybrid of both block and inline elements.
+    2. Width and height are respected.(block property)
+    3. Box does NOT break onto a new line.(inline property)
+    4. Padding, margin and border will cause other elements to be pushed away from 
+        the box.
+*/
