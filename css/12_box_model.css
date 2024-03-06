@@ -1,6 +1,6 @@
 /* 
     When laying out a document, the browser's rendering engine represents each element as a rectangular box 
-    according to the standard CSS basic box model.  CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+    according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
 
     In simple terms, every element is a box. Every box is comprised of 4 parts - content-box, padding, border, margin.
 
