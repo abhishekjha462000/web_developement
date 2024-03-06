@@ -61,5 +61,5 @@ div.alternate {
         width: 200px;
         border: 2px solid red;
         padding: 10px 20px 30px 40px;
-        box-sizing: border-box; /* This is the default setting */
+        box-sizing: border-box; /* note this */
 }
