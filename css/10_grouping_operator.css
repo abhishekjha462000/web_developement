@@ -1,0 +1,11 @@
+/* 
+    The grouping operator (, ) is used so that we can apply same css rules to multiple selectors.
+*/
+
+h1, h2, h3, h4, h5, h6  {
+    background-color: green;
+}
+
+#defined, .purple {
+    color: purple;
+}

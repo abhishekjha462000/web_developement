@@ -1,0 +1,37 @@
+/* 
+    We have 4 types of combinators in CSS.
+    Combinators are values which are used to combine selectors.
+    
+    1. Descendent combinator(" ")(space combinator)
+    2. Child combinator(>)
+    3. Next sibling combinator (+)
+    4. General sibling combinator (~)
+*/
+
+/* ================================================= DESCENDENT COMBINATOR ============================================ */
+
+/* List items that are descendants of the "my-things" list */
+ul.my-things li {
+    margin: 2em;
+}
+
+/* ================================================= CHILD COMBINATOR ============================================ */
+
+/* List items that are children of the "my-things" list */
+ul.my-things > li {
+    margin: 2em;
+}
+
+/* ================================================= NEXT SIBLING COMBINATOR ============================================ */
+
+/* Paragraphs that come immediately after any image */
+img + p {
+    font-weight: bold;
+}
+
+/* ================================================= GENERAL SIBLING COMBINATOR ============================================ */
+
+/* The white space around the ~ combinator is optional but recommended. */
+former_element ~ target_element {
+   font-weight: bold;
+}
