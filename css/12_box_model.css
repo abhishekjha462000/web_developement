@@ -1,0 +1,65 @@
+/* 
+    When laying out a document, the browser's rendering engine represents each element as a rectangular box 
+    according to the standard CSS basic box model.  CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.
+
+    In simple terms, every element is a box. Every box is comprised of 4 parts - content-box, padding, border, margin.
+
+    We have 2 kinds of box model in CSS.
+
+    1. Regular Box Model
+    2. Alternate Box Model
+
+    By default, We use the regular box model. If we want to use the alternate box model,
+    we need to use the property box-sizing and set it equal to 'border-box'.
+*/
+
+/* 
+    Regular Box Model
+    =================
+
+    1. In regular box model, the height and width which we give to the element will be used to set the height and width
+        of the content box of the element.
+    
+    2. The width of the entire box is equal to the width of the content box + horizontal border + horizontal padding
+
+    Let us consider the example below
+*/
+
+div {
+    /* 
+        In this example
+        total height of the div = 500px + 10px(top padding) + 30px(bottom padding) + 2px(top border) + 2px(bottom border)
+                                = 544px
+
+        total width of the div  = 200px + 20px(right padding) + 40px(left padding) + 2px(right border) + 2px(left border)
+                                = 264px
+    */
+
+    height : 500px;
+    width: 200px;
+    border: 2px solid red;
+    padding: 10px 20px 30px 40px;
+    box-sizing: content-box; /* This is the default setting */
+}
+
+div.alternate {
+    /* 
+            In this example:
+            ===============
+
+            total height of the div = 500px
+            total width of the div  = 200px
+
+            height of content box = 500px - 10px(top padding) - 30px(bottom padding) - 2px(top border) - 2px(bottom border)
+                                  = 466px
+
+            width of content box = 200px - 20px(right padding) - 40px(left padding) - 2px(right border) - 2px(left border)
+                                 = 136px
+    */
+    
+        height: 500px;
+        width: 200px;
+        border: 2px solid red;
+        padding: 10px 20px 30px 40px;
+        box-sizing: border-box; /* This is the default setting */
+}

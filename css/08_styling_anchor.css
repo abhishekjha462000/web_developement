@@ -1,0 +1,19 @@
+/* 
+    We can also style anchor tags
+*/
+
+a {
+    text-decoration: none;
+    color: lavenderblush;
+}
+
+/* We can also define the styling when link has been visited */
+a:visited {
+    color: tomato;
+}
+
+/* We can also define the styling upon hovering over the anchor element */
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
