@@ -10,8 +10,8 @@
     7. while comparing we start from the left and move to the right until the tie breaks.
     8. Combinators do not increase or decrease the specificity.
         - For example : span > div and span div have the same specificity.
-    8. Universal selector does not contribute to the specificity.
-    9. Final rule := !important > inline styles > id selector > (classes, psuedo-classes, attribute) > type and psuedo-element selector > universal selector > browser default styles
+    9. Universal selector does not contribute to the specificity.
+    10. Final rule := !important > inline styles > id selector > (classes, psuedo-classes, attribute) > type and psuedo-element selector > universal selector > browser default styles
 
     Example, a specificity score of 1-0-0 would win over an specificity score of 0-11-2.
 */
@@ -22,4 +22,26 @@
     1. SPECIFICITY(span div) = 0-0-2
     2. SPECIFICITY(.nav a:hover) = 0-2-1
     3. SPECIFICITY(#header .nav > p::first-line) = 1-1-2
+*/
+
+/* 
+    SPECIFICITY MATCHES
+    ===================
+    1. div p.special VS .special + .main,
+        - SPECIFICITY(div p.special) = 0-1-2
+        - SPECIFICITY(.special .main) = 0-2-0
+        - (.special .main) WINS !!!
+    
+    2. #navbar VS .main .feat .wide
+        - SPECIFICITY(#navbar) = 1-0-0
+        - SPECIFICITY(.main .feat .wide) = 0-3-0
+        - (#navbar) WINS !!!
+    
+    3. .main + .active VS .main a:hover
+        - SPECIFICITY(.main + .active) = 0-2-0
+        - SPECIFICITY(.main a:hover) = 0-2-1
+        - (.main a:hover) WINS !!!
+    
+    4. 1-0-0 VS 0-20-0
+        - (1-0-0) WINS !!!
 */

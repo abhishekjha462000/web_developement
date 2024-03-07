@@ -1,0 +1,19 @@
+/* 
+    The attribute selector is used to select based on an attribute.
+*/
+
+/* selects all the elements which have type attribute as text */
+[type = "text"] {
+    color: purple;
+}
+
+/* selects all the elements which have a checked attribute */
+[checked] {
+    border: 2px solid red;
+}
+
+/* selects all the input element with type = "password" */
+input[type="password"] {
+    color: blue;
+    font-size: 20px;
+}

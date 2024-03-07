@@ -1,0 +1,27 @@
+/* 
+    The class selector is used to select an element based on the class it has.
+    We need to use the . before the name of the class to tell the CSS that the selector is
+    a class selector.
+*/
+
+.nav {
+    color: blue;
+    font-size: 20px;
+}
+
+.purple {
+    color: purple;
+}
+
+.green {
+    color: green;
+}
+
+/* selects all the div with a class of container */
+div.container {
+    width: 400px;
+    height: 600px;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+

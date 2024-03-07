@@ -1,0 +1,13 @@
+/* 
+    The id selector is used to select an element on the basis of id given to it.
+    We need to use the # symbol before the id to tell CSS that it is an id selector.
+*/
+
+#demo {
+    color: aquamarine;
+}
+
+/* although technically this does not make enough sense */
+h1#header {
+    color: blueviolet;
+}
