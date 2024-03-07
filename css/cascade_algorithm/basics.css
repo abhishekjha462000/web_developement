@@ -1,0 +1,41 @@
+/* 
+    In order to see which rule will be applied, We need to learn the CSS 
+    cascading algorithm.
+
+    It is dependent on 4 parts:
+    1. Importance
+    2. Origin
+    3. Specifity
+    4. Position
+
+    Each of these is a seperate tier and to see which rule will be applied at the end
+    we need to travel down the cascade.
+*/
+
+/* 
+    !important
+    ==========
+    Rules which are marked by !important have the utmost priority
+    and will override any existing style.
+*/
+
+/* 
+    Origin
+    ======
+    On the basis of origin, a CSS rule can come from 3 diff places.
+    1. developer
+    2. user
+    3. browser
+
+    The rules written by the developer has the utmost priority and will overwrite any similar property
+    written by the browser's default stylesheet.
+
+    For example:
+    The browser sets the default color of any text to black but even a simple universal selector 
+    written by the user will change the color of all the text elements in the browser.
+
+    * {
+        color : purple;
+    }
+*/
+
