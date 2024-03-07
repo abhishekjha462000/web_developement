@@ -1,0 +1,25 @@
+/* 
+    We also have viewport units like vw and vh.
+
+    1vw means 1% of viewport's width.
+    1vh means 1% of viewport's height.
+
+    Viewport is defined as the visible window of the browser(including the scrollers.)
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container_one {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.container_two {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}

@@ -1,0 +1,13 @@
+/* 
+    1 rem represents the font-size of the root element (typically <html>). When used within the root element font-size,
+    it represents its initial value. A common browser default is 16px, but user-defined preferences may modify this.
+
+    We as user can also change this by going into the settings and modifying it.
+
+    If the root element's font-size is 20px, then 1 rem is always 20px and 2 rem is always 40px.
+*/
+
+h1 {
+    font-size: 1.5rem; /* 1.5 * 16 = 24px*/
+}
+

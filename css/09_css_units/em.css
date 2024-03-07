@@ -1,0 +1,21 @@
+/* 
+    em's are also relative units.
+    When we use em for a property which is not font-size, then it is calculated relative to 
+    the font-size of the element itself.
+    
+    For example, if the computed font-size of the element is 20px and we set margin to 1.5em,
+    then that would be resolved to 30px.
+
+    However, when we use em's in font-size, then that is calculated relative to the font-size 
+    of the parent element.
+
+*/
+
+.parent {
+    font-size: 40px;
+}
+
+.child {
+    font-size: 2em; /* 2 * 40px = 80px */
+    width: 2em; /* 2 * (computed font-size of the element itself) = 2 * 80px = 160px*/
+}
