@@ -11,7 +11,7 @@
     8. Combinators do not increase or decrease the specificity.
         - For example : span > div and span div have the same specificity.
     8. Universal selector does not contribute to the specificity.
-    9. Final rule := !important > id selector > (classes, psuedo-classes, attribute) > type and psuedo-element selector
+    9. Final rule := !important > inline styles > id selector > (classes, psuedo-classes, attribute) > type and psuedo-element selector > universal selector > browser default styles
 
     Example, a specificity score of 1-0-0 would win over an specificity score of 0-11-2.
 */
