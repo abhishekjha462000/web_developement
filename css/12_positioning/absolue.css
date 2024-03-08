@@ -12,3 +12,41 @@
     4. top, right, bottom, left and z-index can be used to scoot the element further.
 */
 
+/* 
+    HTML code
+    =========
+    <div class="box1">
+        <div class="box2">
+            <span>Hi</span>
+        </div>
+    </div>
+*/
+
+/* CSS code */
+.box1 {
+    background-color: #F44336;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 40px;
+    left: 90px;
+}
+
+.box2 {
+    background-color: #345676;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* 
+    span will take position relative to the nearest positioned ancestor which in this case is div.box1 
+*/
+
+span {
+    background-color: orchid;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
