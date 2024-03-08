@@ -46,3 +46,10 @@ Have a look at this CSS code as well
 ```
 
 When we use `relative position`, then the `top`, `right`, `bottom`, `left` work in reference to the `original position` of the element. Also, the element does not leave its space in the normal document flow.
+
+## Notes
+
+1. A value of `top = 50px` is same as `bottom = -50px` and a value of `left = 20px` is same as `right = -20px`.
+2. Due to the above fact no 1, a lot of people stick to `(top, left)` and  use negative values as well.
+3. You could also use `(bottom, right)` and use negative values.
+4. Just stay consistent.
