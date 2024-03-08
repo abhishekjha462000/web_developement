@@ -45,4 +45,4 @@ Have a look at this CSS code as well
   }
 ```
 
-When we use `relative position`, then the top, right, bottom, left work in reference to the original position of the element. Also, the element does not leave its space in the normal document flow.
+When we use `relative position`, then the `top`, `right`, `bottom`, `left` work in reference to the `original position` of the element. Also, the element does not leave its space in the normal document flow.
