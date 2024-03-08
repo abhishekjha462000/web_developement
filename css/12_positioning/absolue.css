@@ -1,0 +1,14 @@
+/* 
+    absolute
+    ========
+    1. Element is removed from the normal document flow, and is now relative to nearest parent
+        element with an explicit position property(i.e non-static position value).
+    
+    2. If no parent has a position property other than default(static), then it is taken relative 
+        to the root container.
+    
+    3. No space is left where it used to be !
+
+    4. top, right, bottom, left and z-index can be used to scoot the element further.
+*/
+

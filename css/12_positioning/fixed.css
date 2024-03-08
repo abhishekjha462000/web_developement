@@ -1,0 +1,21 @@
+/* 
+    fixed
+    =====
+    1. Element is removed from normal document flow, and is positioned relative to root container.
+    2. No space is left where it used to be !
+    3. top, right, bottom. left and z-index can be used to scoot the element relative to the root element.
+    4. When you scroll, it will stay in place.
+*/
+
+p {
+    font-size: 2rem;
+}
+
+#fixed {
+    font-size: 100px;
+    background-color: blueviolet;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
