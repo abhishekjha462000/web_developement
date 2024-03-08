@@ -1,0 +1,24 @@
+/* 
+    We have another property in CSS which is called position.
+
+    It can take only 5 values. These are
+    1. relative
+    2. sticky
+    3. absolute
+    4. static
+    5. fixed
+
+    By default the value of position is set to static.
+
+    We also have 5 other complementary properties which work under the hood of position.
+    These are
+    1. top
+    2. bottom
+    3. left
+    4. right
+    5. z-index
+
+    By default, the position is set to static and thus these properties do not work as well.
+    We need to set position property to some non-static value in order to make these properties
+    work.
+*/
